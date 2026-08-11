@@ -1,0 +1,84 @@
+:root {
+    --cream: #F7F1E5;
+    --paper: #FFFDF7;
+    --light-brown: #E8D5C4;
+
+    --tan: #C8A27A;
+    --warm-brown: #8B5E3C;
+    --brown: #5C3A21;
+    --dark-brown: #2F1B0C;
+
+    --coral: #D96C4F;
+    --gold: #D9A441;
+    --sage: #7A8B5B;
+
+    --text-dark: #2F1B0C;
+    --text-muted: #725C4A;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,var(--dark-brown),var(--warm-brown)
+    );
+    font-family: "Lora", serif;
+}
+
+h1{
+    font-size: 58px;
+    color: var(--tan);
+    text-align: center;
+}
+
+.card{
+    height: 230px;
+    width: 230px;
+    border: 2px solid var(--dark-brown);
+    background-color: var(--sage);
+    padding: 20px;
+    color: var(--text-dark);
+}
+
+.book-display{
+    display: flex;
+    flex-direction: row wrap;
+    gap: 3px;
+    margin-top: 30px;
+}
+
+#add-book-dialog-btn{
+    height: 50px;
+    width: 100px;
+    background-color: var(--text-muted);
+    color: var(--text-dark);
+    border: 1px solid var(--cream);
+}
+
+#add-book-dialog{
+    height: 300px;
+    width: 500px;
+    border: 3px solid var(--gold);
+    background: linear-gradient(135deg, var(--coral),var(--tan));
+    color: var(--text-dark);
+    text-align: center;
+}
+
+#add-book-dialog::backdrop {
+    background: rgba(47, 27, 12, 0.55);
+    backdrop-filter: blur(4px);
+}
+
+#add-book-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+input{
+    background-color: var(--paper);
+}
+
+#add-book-btn, #cancel-add-book-btn{
+    background-color: var(--text-muted);
+    color: #2F1B0C;
+}

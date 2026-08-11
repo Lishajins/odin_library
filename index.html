@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin_Library</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>MY LIBRARY</h1>
+    <button id="add-book-dialog-btn">Add book</button>
+    <dialog id="add-book-dialog">
+        <form id="add-book-form">
+            <div class="title-input">
+                <label for="title">Title : </label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="author-input">
+                <label for="author">Author : </label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div class="pages-input">
+                <label for="pages">No. of Pages : </label>
+                <input type="number" id="pages" name="pages" required>
+            </div>
+            <div class="read-input">
+                <label>Have you read the book?  
+                    <input type="checkbox" id="read" name="read">
+                </label>
+            </div>
+            <button id="add-book-btn" type="submit">Add Book</button>
+            <button id="cancel-add-book-btn" type="button">Cancel</button>
+        </form>
+    </dialog>
+    <div class="book-display">
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
